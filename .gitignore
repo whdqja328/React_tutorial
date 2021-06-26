@@ -4,6 +4,12 @@
 /node_modules
 /.pnp
 .pnp.js
+/.gitignore
+.gitignore.txt
+package-lock.json
+package.json
+/.package-lock.json
+/.package.json
 
 # testing
 /coverage
@@ -21,6 +27,3 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-package-lock.json
-package.json
