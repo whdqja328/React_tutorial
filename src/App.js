@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
 
-// 컴포넌트 = 정리정돈의 도구.
-// 복잡도를 획기적으로 낮춘다.
+/*
 
 class Subject extends Component {
   render(){
@@ -10,6 +9,19 @@ class Subject extends Component {
       <header>
         <h1>WEB</h1>
         world wide web!
+      </header>
+    );
+  }
+}
+
+*/
+
+class Subject extends Component {
+  render(){
+    return (
+      <header>
+        <h1>{this.props.title}</h1>
+        {this.props.sub}
       </header>
     );
   }
@@ -32,9 +44,10 @@ class TOC extends Component{
 class Content extends Component {
   render(){
     return (
-      <article>
-        <h2>HTML is Hyper Text Markup Language.</h2>
-      </article>
+      <articel>
+        <h2>{this.props.title}</h2>
+        {this.props.desc}
+      </articel>
     );
   }
 }
@@ -43,9 +56,9 @@ class App extends Component{
   render(){
     return (
       <div className="App">
-        <Subject></Subject>
+        <Subject title="WEB" sub="world wide web"></Subject>
         <TOC></TOC>
-        <Content></Content>
+        <Content title="HTML" desc="HTML is Hyper Text Markup Language."></Content>
       </div>
     );
   }
