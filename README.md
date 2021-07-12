@@ -9,3 +9,5 @@
 ## 1-4 state 1-1
 
 ## 1-5 state 1-2
+
+## 1-6 이벤트 state props, render 함수
